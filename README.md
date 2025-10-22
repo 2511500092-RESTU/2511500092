@@ -6,4 +6,4 @@ Matakuliah Pemrograman Web Dasar<br>
 Kelompok {kelompok}<br>
 Tahun Ajaran 2025/2026
 Semester Gasal<br><br>
-![Logo ISBAL](logoisbal.png)
+![Logo ISBAL](logoisbal(1).png)
