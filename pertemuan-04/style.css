@@ -52,12 +52,13 @@
         #home,
         #about,
         #contact {
-            background-color: #ffffff;
+            background-color: #af0707;
             border-radius: 10px;
             padding: 20px;
             max-width: 700px;
             margin: 20px auto;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #af0707;
         } 
 
         #contact {
