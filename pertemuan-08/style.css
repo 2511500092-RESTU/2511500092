@@ -1,3 +1,4 @@
+/* ======= UMUM ======= */
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,7 @@ body {
   line-height: 1.5;
 }
 
+/* ======= HEADER ======= */
 header {
   background: #b80e0e;
   color: #fff;
@@ -49,9 +51,11 @@ header li a:active {
   transform: translateY(1px);
 }
 
-#home:target~header nav a[href="#home"],
-#about:target~header nav a[href="#about"],
-#contact:target~header nav a[href="#contact"] {
+/* Highlight nav aktif saat scroll ke section */
+#home:target ~ header nav a[href="#home"],
+#about:target ~ header nav a[href="#about"],
+#biodata:target ~ header nav a[href="#biodata"],
+#contact:target ~ header nav a[href="#contact"] {
   background: #fff;
   color: #003366;
   font-weight: bold;
@@ -59,8 +63,11 @@ header li a:active {
   transition: all 0.3s ease;
 }
 
-/* Semua section styling sama */
-section {
+/* ======= SECTION (SEMUA) ======= */
+#home,
+#about,
+#biodata,
+#contact {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -69,19 +76,24 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
+#home h2,
+#about h2,
+#biodata h2,
+#contact h2 {
   color: #720d0d;
   border-bottom: 2px solid #720d0d;
   padding-bottom: 6px;
   margin-top: 0;
   margin-bottom: 16px;
+  text-align: center;
 }
 
-section p {
+#home p {
   text-align: justify;
 }
 
-#about p,
+/* ======= FORM STYLE (untuk biodata & contact) ======= */
+#biodata label,
 #contact label {
   display: flex;
   justify-content: flex-start;
@@ -91,8 +103,9 @@ section p {
   border-bottom: 1px solid #e6e6e6;
 }
 
+#biodata label span,
 #about strong,
-#contact label>span {
+#contact label > span {
   min-width: 180px;
   color: #720d0d;
   font-weight: 600;
@@ -101,6 +114,7 @@ section p {
   flex-shrink: 0;
 }
 
+#biodata input,
 #contact input,
 #contact textarea {
   flex: 1;
@@ -113,6 +127,7 @@ section p {
   box-sizing: border-box;
 }
 
+#biodata button,
 #contact button {
   margin-top: 10px;
   display: inline-block;
@@ -125,29 +140,34 @@ section p {
   margin-right: 8px;
 }
 
+#biodata button[type="submit"],
 #contact button[type="submit"] {
   background-color: #003366;
   color: #fff;
   font-weight: 600;
 }
 
+#biodata button[type="reset"],
 #contact button[type="reset"] {
   background-color: #b4b4b4;
   color: #272727;
   font-weight: 500;
 }
 
+#biodata button[type="submit"]:hover,
 #contact button[type="submit"]:hover {
   background-color: #0379ee;
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+#biodata button[type="reset"]:hover,
 #contact button[type="reset"]:hover {
   background-color: #cccccc;
   transform: translateY(-1px);
 }
 
+/* ======= FOOTER ======= */
 footer {
   background: #222;
   color: #aaa;
@@ -155,6 +175,7 @@ footer {
   padding: 10px;
 }
 
+/* ======= MENU RESPONSIF ======= */
 .menu-toggle {
   display: none;
   background: none;
@@ -213,20 +234,24 @@ footer {
   }
 
   #about p,
+  #biodata label,
   #contact label {
     flex-direction: column;
     align-items: flex-start;
   }
 
   #about strong,
-  #contact label>span {
+  #biodata label > span,
+  #contact label > span {
     text-align: left;
     padding-right: 0;
     margin-bottom: 2px;
   }
 
+  #biodata input,
   #contact input,
   #contact textarea,
+  #biodata button,
   #contact button {
     width: 100%;
   }

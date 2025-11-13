@@ -8,4 +8,5 @@ hari ini kamis 13 november 2025
     <li>update skema warna header, tombol, dan footer agar tampilan lebih kontras dan konsisten.</l
     >
      <li>menambahkan section baru<li>
-    <OL>
+    <li>menambahkan styling pada section baru<li>
+    <ol>
