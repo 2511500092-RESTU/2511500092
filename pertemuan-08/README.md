@@ -4,4 +4,8 @@ hari ini kamis 13 november 2025
 <br>Nama: Restu</br>
 <ol>
     <li>download file zip pertemuan08</li>
-    <ol>
+    <li>update pertemuan 8</li>
+    <li>update skema warna header, tombol, dan footer agar tampilan lebih kontras dan konsisten.</l
+    >
+    <OL>
+    
