@@ -1,7 +1,7 @@
 # pertemuan-04
 
-NIM : 2511500077<br>
-Nama : Afdal<br>
+NIM : 2511500092<br>
+Nama : Restu<br>
 
 Hari ini, Kamis 16 Oktober 2025, saya mempelajari:
 <ol>
